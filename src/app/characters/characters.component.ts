@@ -17,7 +17,7 @@ interface ICharactersVm {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CharactersComponent implements OnInit {
-  public characters$: Observable<ICharacter[]>
+  public characters$: Observable<ICharacter[]>;
   private error$$: BehaviorSubject<string> = new BehaviorSubject(null);
   public errorMessage$ = this.error$$.asObservable();
 
