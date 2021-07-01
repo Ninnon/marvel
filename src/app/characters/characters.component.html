@@ -1,0 +1,6 @@
+<div *ngIf="vm$ | async as vm">
+    <div *ngFor="let character of vm.characters">
+        <p>{{character.name}}</p>
+    </div>
+    <div class="error" *ngIf="vm.errorMessage">{{vm.errorMessage}}</div>
+</div>
